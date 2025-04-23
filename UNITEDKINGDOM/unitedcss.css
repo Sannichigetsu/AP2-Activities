@@ -1,8 +1,12 @@
-body {
+html,body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(to left, #00bfa6, #ffffff);
     background-image: url(unitedkingdom.jpeg);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .main-title {
@@ -40,6 +44,8 @@ body {
     font-weight: bold;
     font-size: 40px;
     transition: color 0.3s ease;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .nav-bar a:hover {
@@ -93,10 +99,3 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-html, body {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    margin: 0;
-    height: 100%;
-    overflow-y: scroll;
-}
