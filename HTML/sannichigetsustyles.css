@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    padding:0;
     font-family: "Times New Roman", serif;
     background-color: #ffffff;
     text-align: center;
@@ -26,7 +25,7 @@ body{
 .right-bar{
     right:0;
     border-left: 2px solid rgba(0, 255, 170, 0.5);
-    border-right: none;
+    border-right: none;     
 
 }
 
@@ -39,7 +38,7 @@ body{
 }   
 .social-media {
     margin-top:-2vw;
-    margin-right: 37.5vw; 
+    margin-right: 38vw; 
     transform: translateY(-50%);
     display: flex;
     flex-direction: row;
@@ -97,7 +96,7 @@ hr {
 
 .ABOUT-ME img {
     width: 130px;
-    height: 130px;
+    aspect-ratio: 1/1;
     z-index: 999;
 }
 
@@ -199,8 +198,8 @@ hr {
 
 
 .vertical-line {
-    position: absolute;
-    top: 76%;
+    position: absolute  ;
+    top: 77%;
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 7px; 

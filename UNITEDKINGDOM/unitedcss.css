@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to left, #00bfa6, #ffffff);
+    background-image: url(unitedkingdom.jpeg);
+}
+
+.main-title {
+    text-align: center;
+    font-size: 10em;
+    margin-top: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    height: 80px;
+    width: 112em;
+    z-index: 1000;
+    border-bottom-left-radius: 15px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: white;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pair {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70vh;
+    padding: 0 50px;
+}
+
+.circle-img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.circle-img:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    margin-left: 35vh;
+    font-size: 1.5em;
+    color: #333;
+    max-width: 50%;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: justify;
+}
+
+.description:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
